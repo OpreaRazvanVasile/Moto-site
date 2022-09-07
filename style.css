@@ -1,0 +1,418 @@
+/******Body******/
+
+* {
+    box-sizing: border-box;
+   
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    overflow:auto ;
+    max-height:100px;
+
+
+
+}
+/*********************Header***********************************************/
+header {
+    position: fixed;
+    background-color: rgb(11, 4, 4);
+    opacity: 0.6;
+    width: 100%;
+    height: 7.6vh;
+    display: flex;
+    flex-direction:row ;
+    justify-content: end;
+
+
+}
+
+header a {
+    opacity: 0.6;
+    display: grid;
+    grid-column: 1/4;
+    margin-top: 1%;
+    position: fixed;
+    display: inherit;
+    position: relative;
+    margin-right: 1%;
+    margin-left: 5%;
+    width: 100vh;
+    font-size: 3vh;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: rgb(213, 250, 250);
+    display: auto;
+    box-sizing: border-box;
+    opacity: 0.4;
+    font-weight: bold;
+    object-fit: contain;
+
+}
+
+header a:hover{
+    opacity:0.7 ;
+}
+header a:focus{
+    opacity:1 ;
+}
+
+
+/*********************NavBAr***********************************************/
+.navigation {
+    display:flex ;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center ;
+    position: fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    background-color: rgb(252, 252, 252);
+    margin-top: 7vh;
+    width: 100%;
+    height: 11vh;
+    object-fit: contain;
+    border: 7px rgb(255, 250, 250) solid;
+    box-sizing: border-box;
+    width:100%;
+
+}
+
+
+#moto_logo {
+    display:flex ;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center ;
+    height: 9vh;
+    width: 8%;
+    object-fit: contain;
+    cursor: pointer;
+    margin-right:116vh ;
+
+}
+
+
+
+.navigation-menu {
+
+    /* justify-content: first baseline; */
+    display:flex ;
+    justify-content:center;
+    flex-direction: row;
+    
+    align-items:center ;
+    object-fit: cover;
+    margin-top: -6.3vh;
+    margin-left: -9vh;
+    font-size: 1.5em;
+    font-weight: 900;
+    object-fit: cover;
+    opacity: 0.8;
+    /* max-width:100% ; */
+
+}
+
+.navigation-menu a {
+    display:flex ;
+    justify-content:flex-start ;
+    flex-direction: row;
+    align-items:center ;
+    margin-left: 4vh;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-size:3vh;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    transition: box-shadow 0.7s, background 0.9s, backopacity 1s,color 1.2s;
+
+}
+
+.navigation-menu a:hover {
+    box-shadow: 20px 5px 100px 20px red;
+    background: rgb(255, 177, 177);
+    opacity: 1;
+    color:rgb(255, 114, 114);
+   
+
+}
+
+.navigation-menu a:active,
+.navigation-menu a:focus {
+    box-shadow: 20px 5px 100px 20px rgb(25, 255, 4);
+ 
+    background: rgb(156, 255, 156);
+    color:#01b301 ;
+    opacity: 1;
+    transition: box-shadow 1.6s, background 1.6s, backopacity 1s,color 1s;
+}
+/**************NavMenu Moto***********/
+.menuMoto{
+    display:flex ;
+    flex-direction:row;
+      justify-content:flex-start;
+     align-items:left;
+}
+.motor{
+    
+    cursor: pointer;
+    margin-top:18vh ; 
+    border:3px solid black ;
+    width:30vh ;
+    background-color:rgb(57, 57, 57) ;
+    height:60vh ;
+     
+    text-align:left;
+    margin-left:-2vh ;
+
+
+}
+.motor a{
+  display:flex ;
+    flex-direction:column;
+     justify-content:flex-start;
+    text-decoration:none ;
+    font-variant: small-caps;
+    color:white ;
+    font-size:3vh ;
+    padding:4vh ;
+    margin-top:2vh ;
+    transition:height 2s linear ease-in-out ;
+    text-shadow:1px 1px 10px rgb(47, 255, 102);
+}
+.motor a:hover{
+    background-color: #9e3838;
+    transition: background-color 2s linear,box-shadow 1s linear ease;
+
+}
+.motor a:focus{
+    background-color: rgb(25, 255, 4);
+    box-shadow: 20px 5px 100px 20px rgb(25, 255, 4);
+    transition: background-color 1.6s linear;
+}
+
+
+/*********************Menu-animation***********************************************/
+.menu-animation {
+    display: flex;
+   flex-direction:row ;
+    /* margin-top: 30vh; */
+    background: url('img/ezgif-3-7f161af2e0.gif');
+    /* background-size:2200% 200%;  */
+
+    animation: moto 15s infinite ease-in-out;
+    transition: animation 17s ease-in-out;
+    width: 100%;
+    height: 67.4vh;
+    margin-top:10.4vh ;
+    cursor:pointer;
+    /* box-shadow:1px 1px 10px 1px rgb(232, 114, 114) ; */
+}
+@keyframes moto {
+    
+  
+    to {
+        background: url('img/ezgif-3-7f161af2e0.gif');
+        background-size:100% 124%;
+    }
+
+
+    from {
+        background: url('img/InbornEducatedCowbird-size_restricted.gif');
+        background-size:100% 124%;
+    }
+
+
+}
+/*********************Main***********************************************/
+.main{
+    display:flex ;
+    flex-direction:row;
+    justify-content:center ;
+    align-items: center;
+    background-color:black ;
+    object-fit:cover ;
+    width:100% ;
+ 
+   
+}
+.menuElement{
+    display:inherit;
+    background:url('img/background-yamaha-sportbike-black-wallpaper-preview.jpg') ;
+    background-size:100% 124%;
+    width:17% ;
+   
+    height:30vh ;
+    object-fit:cover ;
+    filter:blur(0.6px) ;
+    cursor: pointer;
+  
+}
+#motorcycles{
+    background:url('img/8FfhjZ (1).webp');
+    background-size:100% 100%;
+    object-fit:cover ;
+}
+#scooters{
+    background:url('img/6382200.webp') ;
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#tricycle{
+   background-image:url('img/2019-game-over-cycle-custom-niken-unveiled-award-17.jpg');
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#atv{
+    background-image:url('img/780622-atv-4x4-os (2).jpg');
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#snow{
+    background:url('img/download (2).jpg');
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#accessories{
+    background:url('img/images.jpg');
+    background-size:100% 100% ;
+    object-fit:cover;
+   
+}
+.menuElement  a{
+    display:inherit ;
+    font-size:20px ;
+    float: center;
+    text-decoration: none;
+    color: aliceblue;
+    margin-left:30vh ;
+    object-fit: cover;
+}
+
+/*********************Footer**********************************************/
+footer{
+    display:flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-color:rgb(15, 13, 13);
+    width:100% ;
+    max-width:100% ;
+   height:45vh ;
+   max-height:100vh ;
+ 
+}
+.visit-website{
+    display:inherit;
+
+ 
+
+}
+footer a {
+    font-size:0.7em;
+    text-decoration:none ;
+    color:whitesmoke;
+    margin-left:30vh ;
+   }
+ 
+.homeItems{
+    display:flex ;
+    align-items:center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    width:1vh ;
+    left:-5em ;
+    top:3em;
+    font-size:4vh ;
+    top:10vh;
+    
+}
+
+ #fb,#nT,#gt,#yo{
+  
+    width:6vh ;
+    object-fit:cover ;
+    transition:box-shadow 0.7s,width 1s  ;
+    cursor: pointer;
+ }
+ #fb:hover,#nT:hover,#gt:hover,#yo:hover{
+   box-shadow:4px 4px 50px red ;
+   width:10vh ;
+   /* transition: box-shadow,2s width ; */
+   border-radius:20% ;
+
+ }
+ #nT{
+
+    position: relative;
+    left:13vh ;
+    top:-6vh;
+ }
+ #gt{
+  
+    position: relative;
+    top:-2vh;
+ }
+ #yo{
+  
+    position: relative;
+    top:4vh
+ }
+ .oficial,.oficial2,.oficial3{
+    position: relative;
+    left:3vh ;
+    color:red ;
+    top:-7em;
+    display:flex ;
+  
+    flex-direction:column ;
+    flex-direction:flex-start;
+    font-size:3.2vh;
+    text-decoration:none ;
+    top:-4.3em;
+    left:6em ;
+    color:gainsboro ;
+    opacity:0.3;
+    width:70vh;
+ }
+ .oficial2{
+   margin-left:14em ;
+   margin-top:-8.2em ;
+ }
+ .oficial3{
+    margin-left:28em ;
+    margin-top:-5em ;
+ }
+ .oficial a:hover,.oficial2 a:hover,.oficial3 a:hover{
+    display:flex ;
+    flex-direction:column ;
+    flex-direction:flex-start;
+    opacity:0.5;
+    color: #01b301;
+    width:30vh;
+
+
+ }
+ .oficial a:focus,.oficial2 a:focus{
+
+ opacity:0.9;
+    color: #68ff68;
+    width:30vh;
+ }
+ .title{
+    color: #01b301;
+    /* font-size:30px ; */
+ }
+
+
+
+
+
+

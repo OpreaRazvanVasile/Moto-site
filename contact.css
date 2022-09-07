@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+  
+  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #37c093;
+    background-image: url('img/2021-Yamaha-XP500ADX-EU-Tech_Kamo-Static-005-03.jpg');
+    background-size:100% 75%;
+    background-repeat:no-repeat ;
+ 
+    
+}
+/******************Header***************/
+
+header {
+    position: fixed;
+    background-color: rgb(44, 39, 39);
+    opacity: 0.6;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction:row ;
+    justify-content: end;
+    top:-1.5vh;
+
+
+}
+
+header a {
+    opacity: 0.6;
+    display: grid;
+    grid-column: 1/4;
+    margin-top: 1%;
+    position: fixed;
+    display: inherit;
+    position: relative;
+    margin-right: 1%;
+    margin-left: 5%;
+    margin-top:vh ;
+    width: 100vh;
+    font-size: 3vh;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: rgb(213, 250, 250);
+    display: auto;
+    box-sizing: border-box;
+    opacity: 0.4;
+    font-weight: bold;
+    object-fit: contain;
+
+}
+
+header a:hover{
+    opacity:0.7 ;
+}
+header a:focus{
+    opacity:1 ;
+}
+/******************Forum***************/
+
+form {
+
+    position: relative;
+    margin-left: 10vh;
+    margin-top: 5%;
+    width:100vh ;
+    margin-bottom: 5%;
+    font-size: 10px;
+    text-decoration: none;
+    z-index: 0;
+    opacity: 0.8;
+    /* border:2px solid white ; */
+    width: 70vh;
+    /* background-color: gray; */
+   height:10vh ;
+
+
+}
+
+input,
+textarea {
+    box-sizing: content-box;
+    margin-left: 3vh;
+    padding: 4vh;
+    width: 40vh;
+    height:4vh ;
+    border-radius: 4%;
+    background-color: #ffffff;
+    ;
+    font-size: 2vh;
+    cursor: context-menu;
+    font-weight: 800;
+    color: grey;
+    cursor: pointer;
+
+}
+
+textarea {
+    font-weight: bolder;
+    font-size: 2.4vh;
+}
+
+
+#sent{
+    display: inherit;
+    margin-left: 2.75vh;
+    margin-top: -3.7vh;
+    cursor: pointer;
+}
+
+#sent:hover {
+    color: rgb(241, 130, 130);
+    background-color: grey;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    opacity: 1;
+    transition: color 1s ease-in, opacity 1s ease-in, background-color 1s, font-size 1s ease-in-out, font-weight 1s ease-in;
+}
+/******************Mesaj***************/
+.sal{
+    position: relative;
+    font-size:10vh ;
+    color: #a2ffa2;
+    top:37vh;
+    left:15vh;
+    font-variant:small-caps ;
+    /* border:2px solid #ac6666 ; */
+    width:200vh ;
+    height:19vh ;
+    font-weight:bold ;  
+    text-shadow:3px 2px 35px rgb(1, 55, 18) ;
+    opacity:0.75 ;
+  
+}
+
+
+/*********************Footer**********************************************/
+footer{
+    margin-top:74vh ;
+    max-width:cover ;
+}
+footer{
+    display:flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left:3vh ; 
+    background-color:rgb(15, 13, 13);
+    width:105% ;
+    max-width:105% ;
+   height:70vh ;
+   
+
+}
+.visit-website{
+    display:inherit;
+
+ 
+
+}
+footer a {
+    display:flex;
+    align-items:left;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size:0.7em;
+    text-decoration:none ;
+    color:whitesmoke;
+    margin-left:30vh ;
+   }
+ 
+.homeItems{
+    display:flex ;
+    align-items:center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    width:1vh ;
+    left:-5em ;
+    top:3em;
+    font-size:4vh ;
+    top:10vh;
+    
+}
+
+ #fb,#nT,#gt,#yo{
+  
+    width:6vh ;
+    object-fit:cover ;
+    transition:box-shadow 0.7s,width 1s  ;
+    cursor: pointer;
+ }
+ #fb:hover,#nT:hover,#gt:hover,#yo:hover{
+   box-shadow:4px 4px 50px red ;
+   width:10vh ;
+   /* transition: box-shadow,2s width ; */
+   border-radius:20% ;
+
+ }
+ #nT{
+
+    position: relative;
+    left:13vh ;
+    top:-6vh;
+ }
+ #gt{
+  
+    position: relative;
+    top:-2vh;
+ }
+ #yo{
+  
+    position: relative;
+    top:4vh
+ }
+ .oficial,.oficial2,.oficial3{
+    position: relative;
+    left:3vh ;
+    color:red ;
+    top:-7em;
+    display:flex ;
+  
+    flex-direction:column ;
+    flex-direction:flex-start;
+    font-size:3.2vh;
+    text-decoration:none ;
+    top:-4.3em;
+    left:6em ;
+    color:gainsboro ;
+    opacity:0.3;
+    width:70vh;
+ }
+ .oficial2{
+   margin-left:14em ;
+   margin-top:-8.2em ;
+ }
+ .oficial3{
+    margin-left:28em ;
+    margin-top:-5em ;
+ }
+ .oficial a:hover,.oficial2 a:hover,.oficial3 a:hover{
+    display:flex ;
+    flex-direction:column ;
+    flex-direction:flex-start;
+    opacity:0.5;
+    color: #01b301;
+    width:30vh;
+
+
+ }
+ .oficial a:focus,.oficial2 a:focus{
+
+ opacity:0.9;
+    color: #68ff68;
+    width:30vh;
+ }
+ .title{
+    color: #01b301;
+    /* font-size:30px ; */
+ }
+ 
+ 

@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+    /* max-width:207vh ;
+    max-width:210vh ; */
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-height:100px;
+    overflow:auto ;
+
+
+
+
+}
+
+header {
+    position: fixed;
+    background-color: rgb(11, 4, 4);
+    opacity: 0.6;
+    width: 100%;
+    height: 7.6vh;
+    display: flex;
+    flex-direction:row ;
+    justify-content: end;
+
+
+}
+
+header a {
+    opacity: 0.6;
+    display: grid;
+    grid-column: 1/4;
+    margin-top: 1%;
+    position: fixed;
+    display: inherit;
+    position: relative;
+    margin-right: 1%;
+    margin-left: 5%;
+    width: 100vh;
+    font-size: 3vh;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: rgb(213, 250, 250);
+    display: auto;
+    box-sizing: border-box;
+    opacity: 0.4;
+    font-weight: bold;
+    object-fit: contain;
+
+}
+
+header a:hover{
+    opacity:0.7 ;
+}
+header a:focus{
+    opacity:1 ;
+}
+
+
+
+nav {
+    position: fixed;
+    display: grid;
+    grid-column: 1/4;
+    background-color: rgb(252, 252, 252);
+    margin-top: 7vh;
+    width: 100%;
+    height: 11vh;
+    object-fit: contain;
+    border: 7px rgb(255, 250, 250) solid;
+    box-sizing: border-box;
+}
+
+#moto_logo {
+    height: 9vh;
+    width: 10%;
+    object-fit: contain;
+    cursor: pointer;
+    margin-left: 30vh;
+}
+
+.navigation-menu {
+
+    justify-content: first baseline;
+    object-fit: cover;
+    margin-top: -7vh;
+    margin-left: 50vh;
+    font-size: 1.5em;
+    font-weight: 900;
+    object-fit: contain;
+    opacity: 0.8;
+
+}
+
+.navigation-menu a {
+    margin-left: 4vh;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-size: 3vh;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+
+
+
+
+}
+
+.navigation-menu a:hover {
+    box-shadow: 20px 5px 100px 20px red;
+    background: rgb(255, 177, 177);
+    opacity: 1;
+    color:rgb(255, 114, 114);
+    transition: box-shadow 3s, background 3s, backopacity 1s,color 2s;
+
+}
+
+.navigation-menu a:active,
+.navigation-menu a:focus {
+    box-shadow: 20px 5px 100px 20px rgb(25, 255, 4);
+    width: 100%;
+    background: rgb(156, 255, 156);
+    color:#01b301 ;
+    opacity: 1;
+    transition: box-shadow 3s, background 3s, backopacity 1s,color 2s;
+}
+
+.menu-animation {
+    display: grid;
+    grid-column: 1/4;
+    /* margin-top: 30vh; */
+    background: url('img/ezgif-3-7f161af2e0.gif');
+    /* background-size:2200% 200%;  */
+
+    animation: moto 15s infinite ease-in-out;
+    transition: animation 17s ease-in-out;
+    width: 100%;
+    height: 67.4vh;
+    margin-top:10.4vh ;
+    cursor:pointer;
+    /* box-shadow:1px 1px 10px 1px rgb(232, 114, 114) ; */
+}
+.main{
+    display:flex ;
+    flex-direction: left;
+    align-items:left;
+    justify-content:left;
+    background-color:black ;
+ 
+   
+}
+.menuElement{
+    display:inherit;
+    background:url('img/background-yamaha-sportbike-black-wallpaper-preview.jpg') ;
+    background-size:100% 124%;
+    width:17% ;
+   
+    height:30vh ;
+    object-fit:cover ;
+    filter:blur(0.6px) ;
+    cursor: pointer;
+    
+}
+#motorcycles{
+    background:url('img/8FfhjZ (1).webp');
+    background-size:100% 100%;
+    object-fit:cover ;
+}
+#scooters{
+    background:url('img/6382200.webp') ;
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#tricycle{
+   background-image:url('img/2019-game-over-cycle-custom-niken-unveiled-award-17.jpg');
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#atv{
+    background-image:url('img/780622-atv-4x4-os (2).jpg');
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#snow{
+    background:url('img/download (2).jpg');
+    background-size:100% 100% ;
+    object-fit:cover ;
+}
+#accessories{
+    background:url('img/images.jpg');
+    background-size:100% 100% ;
+    object-fit:cover;
+}
+.menuElement:hover {
+    margin-top:-17vh ;
+    opacity:0.7 ;
+    border-radius:25% ;
+    object-fit:cover ;
+    height:45vh ;
+    filter:blur(0px) ;
+    box-shadow:0px 0px 100px 0px rgb(49, 255, 17) ;
+    transition: margin-top 1s ease,height 2.4s,border-radius 3s ease-in-out,filter 3s ease-in,opacity 2s;
+   
+}
+.menuElement  a{
+    display:inherit ;
+    font-size:20px ;
+   float: center;
+   text-decoration: none;
+   color: aliceblue;
+   margin-left:30vh ;
+   object-fit: cover;
+}
+footer{
+    display:flex;
+    align-items:left/right;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-color:rgb(15, 13, 13);
+    width:100% ;
+   max-height:45vh ;
+ 
+}
+.visit-website{
+    display:inherit;
+
+ 
+
+}
+footer a {
+    font-size:0.7em;
+    text-decoration:none ;
+    color:whitesmoke;
+    margin-left:30vh ;
+   }
+ 
+.homeItems{
+    display:flex ;
+    align-items:center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    width:1vh ;
+    left:-5em ;
+    top:3em;
+    font-size:4vh ;
+    top:10vh
+}
+
+ #fb,#nT,#gt,#yo{
+  
+    width:6vh ;
+    object-fit:cover ;
+ }
+ #fb:hover,#nT:hover,#gt:hover,#yo:hover{
+   box-shadow:4px 4px 50px red ;
+   width:10vh ;
+   transition:2s box-shadow,2s width ;
+   border-radius:20% ;
+ }
+ #nT{
+
+    position: relative;
+    left:13vh ;
+    top:-6vh;
+ }
+ #gt{
+  
+    position: relative;
+    top:-2vh;
+ }
+ #yo{
+  
+    position: relative;
+    top:4vh
+ }
+ .oficial,.oficial2,.oficial3{
+    position: relative;
+    left:3vh ;
+    color:red ;
+    top:-7em;
+    display:flex ;
+  
+    flex-direction:column ;
+    flex-direction:flex-start;
+    font-size:3.2vh;
+    text-decoration:none ;
+    top:-4.3em;
+    left:6em ;
+    color:gainsboro ;
+    opacity:0.3;
+    width:70vh;
+ }
+ .oficial2{
+   margin-left:14em ;
+   margin-top:-8.2em ;
+ }
+ .oficial3{
+    margin-left:28em ;
+    margin-top:-5em ;
+ }
+ .oficial a:hover,.oficial2 a:hover,.oficial3 a:hover{
+    display:flex ;
+    flex-direction:column ;
+    flex-direction:flex-start;
+    opacity:0.5;
+    color: #01b301;
+    width:30vh;
+    transition:1.2s opacity,1.2s color,1,2s width  ;
+
+
+ }
+ .oficial a:focus,.oficial2 a:focus{
+
+ opacity:0.9;
+    color: #68ff68;
+    width:30vh;
+ }
+ .title{
+    color: #01b301;
+    /* font-size:30px ; */
+ }
+
+
+@keyframes moto {
+    
+  
+    to {
+        background: url('img/ezgif-3-7f161af2e0.gif');
+        background-size:100% 124%;
+    }
+
+
+    from {
+        background: url('img/InbornEducatedCowbird-size_restricted.gif');
+        background-size:100% 124%;
+    }
+
+
+}
+.input_login{
+    position: relative;
+    width:500px ;
+    height:10px ;
+    width:12vh ;
+    height:4vh ;
+    top:4vh;
+    right:46vh;
+    background-color:rgb(40, 38, 38) ;
+    color:wheat ;
+    text-decoration:lowercase;
+    font-size:12px ;
+    border-radius:15% ;
+    text-transform: none;
+    margin-top:2em ;
+  
+
+}
+.nume{
+    left:-34vh;
+}
+.pass{
+    top:9vh;}
+
+.sent{
+    cursor: pointer;
+    top:13vh;
+    left:-58vh ;
+    background-color: blanchedalmond;
+    color:black ;
+
+}    
+
+
+
+
+/* @media(max-width:1272px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        /* margin-left:-12em; */
+        /* width: 300vh;
+        margin-top: 8vh;
+        height: 12vh;
+    }
+
+    .vertical-menu a {
+        font-size: 0.9em;
+    }
+} */ 
+
+/* @media(max-width:880px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        margin-top: 7vh;
+        width:180vh ;
+    }
+    .menu-animation{
+        margin-top:0.3vh; 
+       /* max-width:150vh ; */
+       /* width:180vh ;
+    }
+    
+} */
+
+/* @media (max-width:303px) {
+    header {
+        font-size: 0.6em;
+        height: 5vh;
+    }
+
+} */
+/* 
+@media (max-width:240px) {
+    header {
+        font-size: 0.3em;
+        height: 3vh;
+    }
+} */

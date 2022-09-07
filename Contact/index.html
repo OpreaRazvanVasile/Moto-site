@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header class="hed"> <a id="home" href="index.html">Home</a>
+        <a id="contact" href="contact.html">Contact</a>
+        <a id="sing_up" href="#sing_in">SingUp</a>
+        <a id="log_in" href="#log_in">Login</a>
+    </header>
+    <nav class="nav">
+       <img id="moto_logo" src="img/moto-icon-19.jpg" alt="moto_logo"></a>
+        <span class="navigation-menu">
+      <a href="#Motorcycles"id="motorcycles_top">Motorcycles</a>
+      <a href="#Scooters"id="scooters_top">Scooters</a>
+      <a href="#Tricycle"id="tricycle_top">Tricycle</a>
+      <a href="#Atv"id="atv_top">Atv</a>
+      <a href="#Snow"id="snow_top">Snow</a>
+      <a href="#Accessories"id="accessories_top">Accessories</a>
+       
+      </span>
+    </nav>
+    <form>
+     <input type="text"id="first_name" placeholder="Nume" name="contact"class="capitalization"required maxlength="10"><br> 
+     <input type="text"id="second_name" placeholder="Prenume" name="contact"class="capitalization"required maxlength="10"> <br>       
+     <input type="number"id="age" placeholder="Varsta"name="contact"><br>
+     <input type="text"id="birthYear" placeholder="Anul Nasteri" name="contact" disabled><br>
+     <input type="email"id='mail' placeholder="Email"class="capitalization"name="contact"required ><br>
+     <textarea name="contact" placeholder="Descriere" id="textarea" cols="20" rows="7"required maxlength="3000"></textarea><br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit"id='sent'>
+  
+    </form>
+    <script src="contact.js"></script>
+</body>
+</html>
